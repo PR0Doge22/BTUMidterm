@@ -22,7 +22,7 @@
 
             /* Typography */
             --font-primary: 'Archivo Black', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-secondary: 'Helvetica LT Pro Roman', monospace;
+            --font-secondary: 'helvetica-lt-pro', -apple-system, sans-serif;
 
             /* Spacing System */
             --spacing-xs: 0.25rem;
@@ -79,11 +79,15 @@
         }
 
         .body-text {
+            font-family: var(--font-secondary);
+            font-weight: 500;
             font-size: 1rem;
             margin-bottom: var(--spacing-md);
         }
 
         .small-text {
+            font-family: var(--font-secondary);
+            font-weight: 700;
             font-size: 0.75rem;
             color: color-mix(in srgb, var(--color-text-dark) 70%, transparent);
         }
@@ -197,10 +201,10 @@
 
         <section>
             <h2>Typography</h2>
-            <h1>Heading 1 - Space Grotesk</h1>
-            <h2>Heading 2 - Space Grotesk</h2>
-            <h3>Heading 3 - Space Grotesk</h3>
-            <p class="body-text">Body Text - Using Space Grotesk with a comfortable line height and readable size.</p>
+            <h1>Heading 1 - Archivo Black</h1>
+            <h2>Heading 2 - Archivo Black</h2>
+            <h3>Heading 3 - Archivo Black</h3>
+            <p class="body-text">Body Text - Using Helvetica with a comfortable line height and readable size.</p>
             <p class="small-text">Small Text - Subtle and understated, perfect for annotations and footnotes.</p>
         </section>
 
