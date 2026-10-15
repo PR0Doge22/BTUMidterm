@@ -1,0 +1,23 @@
+:root {
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+
+    --color-primary: #241d20;     /* Vibrant Blue - Main Brand Color */
+    --color-secondary: #0F78BD;   /* Emerald Green - Complementary Action Color */
+    --color-accent: #cf2027;      /* Passionate Red - Highlight / Warning Color */
+    --color-neutral: #241d20;     /* Deep Slate Gray - Neutral Text and Background */
+    --color-highlight: #f4d833;   /* Bright Yellow - Accent / Attention Color */
+}
+
+nav.navBanner {
+    width: 100%;
+    background-color: var(--color-secondary);
+}
+
+nav.navBanner ul {
+    display: flex;
+    gap: 14.29%; 
+}
