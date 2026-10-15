@@ -10,14 +10,46 @@
     --color-accent: #cf2027;      /* Passionate Red - Highlight / Warning Color */
     --color-neutral: #241d20;     /* Deep Slate Gray - Neutral Text and Background */
     --color-highlight: #f4d833;   /* Bright Yellow - Accent / Attention Color */
+
+    --font-primary: 'Archivo Black', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-secondary: 'helvetica-lt-pro', -apple-system, sans-serif;
 }
+
+body {
+    margin: 0;
+}
+
 
 nav.navBanner {
     width: 100%;
     background-color: var(--color-secondary);
+    margin: 0;
+    padding: var(--spacing-sm);
 }
 
 nav.navBanner ul {
     display: flex;
-    gap: 14.29%; 
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    font-size: 25px;
+    font-family: var(--font-primary);
+}
+
+nav.navBanner ul li a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  nav.navBanner ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    gap: var(--spacing-sm);
+  }
+
+  nav.navBanner ul li img {
+    width: 50px;
+  }
 }
