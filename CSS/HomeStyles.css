@@ -11,14 +11,19 @@
     --color-neutral: #241d20;     /* Deep Slate Gray - Neutral Text and Background */
     --color-highlight: #f4d833;   /* Bright Yellow - Accent / Attention Color */
 
+    --color-text-light: white;
+
     --font-primary: 'Archivo Black', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-secondary: 'helvetica-lt-pro', -apple-system, sans-serif;
+}
+
+html, body {
+    max-width: 100%;
 }
 
 body {
     margin: 0;
 }
-
 
 nav.navBanner {
     width: 100%;
@@ -28,28 +33,46 @@ nav.navBanner {
 }
 
 nav.navBanner ul {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     list-style-type: none;
-    align-items: center;
     font-size: 25px;
     font-family: var(--font-primary);
+    padding: 0;
+    margin: 0;
+    gap: var(--spacing-sm);
 }
 
 nav.navBanner ul li a {
     text-decoration: none;
-    color: var(--color-primary);
+    color: var(--color-text-light);
 }
 
-@media (max-width: 768px) {
+nav.navBanner ul li {
+    align-items: center;
+    align-content: center;
+    background-color: var(--color-primary);
+    height: 5rem;
+    width: 100%;
+    border-radius: var(--spacing-sm);
+}
+
+
+@media (max-width: 850px) {
   nav.navBanner ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-around;
     gap: var(--spacing-sm);
+    font-size: 20px;
   }
 
-  nav.navBanner ul li img {
-    width: 50px;
+  #BannerIcon {
+    display: none;
+  }
+
+  nav.navBanner ul li {
+    height: 3.5rem;
+    width: 100%;
   }
 }
