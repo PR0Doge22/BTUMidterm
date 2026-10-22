@@ -133,6 +133,32 @@ h3 {
     font-family: var(--font-primary);
 }
 
+h4{
+    font-size: 1.3rem;
+    font-weight: 450;
+    margin-bottom: var(--spacing-sm);
+    font-family: var(--font-primary);
+}
+
+h5{
+    font-size: 1.2rem;
+    font-weight: 425;
+    margin-bottom: var(--spacing-sm);
+    font-family: var(--font-primary);
+}
+
+p, ul, li, br {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-primary);
+}
+
+footer {
+    font-size: .8rem;
+    font-weight: 400;
+    font-family: var(--font-primary);
+}
+
 .body-text {
     font-family: var(--font-secondary);
     font-weight: 500;
