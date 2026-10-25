@@ -20,7 +20,6 @@
 }
 
 html, body {
-    max-width: 100%;
     overflow-x: hidden;
     background-color: var(--color-background);
 }
@@ -57,7 +56,6 @@ nav.navBanner ul {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     list-style-type: none;
-    font-size: 25px;
     font-family: var(--font-primary);
     padding: 0;
     margin: 0;
@@ -72,6 +70,7 @@ nav.navBanner ul li {
     height: 5rem;
     width: 100%;
     border-radius: var(--spacing-sm);
+    font-size: 20px;
 }
 
 nav.navBanner ul li a {
