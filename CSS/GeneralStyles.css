@@ -118,7 +118,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 1.85rem;
     font-weight: 600;
     margin-bottom: var(--spacing-md);
     color: var(--color-secondary);
@@ -126,7 +126,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 500;
     margin-bottom: var(--spacing-sm);
     color: var(--color-accent);
@@ -134,21 +134,21 @@ h3 {
 }
 
 h4{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 450;
     margin-bottom: var(--spacing-sm);
     font-family: var(--font-primary);
 }
 
 h5{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 425;
     margin-bottom: var(--spacing-sm);
     font-family: var(--font-primary);
 }
 
 p, ul, li, br {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
     font-family: var(--font-primary);
 }
