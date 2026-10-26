@@ -7,865 +7,884 @@
     0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../CSS/GeneralStyles.css">
+    <link rel="stylesheet" href="../CSS/PeopleStyles.css">
 </head>
 
 <body>
-<header>
-    <nav class="navBanner">
-        <ul>
-            <li><a href=Home.html>
-                <img src="../Assets/btu%20logo.png" 
-                alt="4 Section Diamond with B, T, U, and Lab in each section. Colors based on a fire diamond." 
-                width="50" id="BannerIcon"> 
-                BTU Lab</a></li>
-            <li><a href="ourPeople.html">People</a></li>
-            <li><a href="Calender.html">Calender</a></li>
-            <li><a href="rulesAndPolicies.html">Rules and Policies</a></li>
-            <li><a href="workshops.html">Workshops</a></li>
-            <li><a href="helpUs.html">Join Us</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav class="navBanner">
+            <ul>
+                <li><a href=index.html><img src="../Assets/btu logo.png" alt="4 Section Diamond with B, T, U, and Lab in each section. Colors based on a fire diamond." width="50px" id="BannerIcon"> BTU Lab</a></li>
+                <li><a href="ourPeople.html">People</a></li>
+                <li><a href="calendar.html">Calender</a></li>
+                <li><a href="rulesAndPolicies.html">Rules and Policies</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><button onclick="toggleMenu()" class="dropDownButton">Stations</button></li>
+            </ul>
+        </nav>
 
+        <nav id="dropDownContent" class="dropDownMenu">
+            <ul>
+                <li><a href="3dPrinters.html">3D Printers</a></li>
+                <li><a href="cnc.html">CNC Machine</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="lasers.html">Lasers</a></li>
+                <li><a href="sewingAndTextiles.html">Sewing & Textiles</a></li>
+                <li><a href="Tools.html">Tools</a></li>
+                <li><a href="Woodshop.html">Woodshop</a></li>
+            </ul>
+        </nav>
+        
+        <script>
+            function toggleMenu() {
+                document.getElementById("dropDownContent").classList.toggle("displayMenu");
+            }
+        </script>
+    </header>
+    <main>
+        <section id="top">
+            <h1>
+                Our People
+            </h1>
+        </section>
+            <!--little intro section to the page-->
+        <section>
+            <h2>Make your Mischief!</h2>  
+            <p class="body-text">Use this directory to contact BTU staff about your interests or questions. 
+                Next to each person's image, is a list of things they can help you with, 
+                and their contact information. Reach out! We love to help.Become part of the team! Email Zack Weaver if you're interested in sharing your skills with the community
+            </p>
+            <p class="body-text"> 
+                <a href="helpUs.html">Click here</a> if you want to help up blow stuff up!
+            </p>
+        </section>
+            <!--format for each person-->
+        
+        <div class="peopleHolder">
+            <section class="person">
+                <img src="../Assets/people/zackWeaver.jpg" alt="photo of zackWeaver in the btu lab">
+                <h3>
+                    Zack Weaver | Director
+                </h3>
+                <h4>
+                    <br>Director, BTU Lab | Assistant Teaching Professor, ATLAS Institute.
+                    <br>zack.weaver@colorado.edu
+                </h4>
+                <h5>
+                <br>I am a wizard with:
+                </h5>
+                <ul>
+                    <li>General Tools</li>
+                    <li>Wood Shop</li>
+                    <li>Sewing & Textiles</li>
+                    <li>Electronics</li>
+                    <li>Lasers (Lazor Wizard)</li>
+                    <li>3D Printing</li>
+                    <li>Shaper CNC</li>
+                    <li>Way, way more</li>
+                </ul>
+            </section>
+            
 
-<section id="top">
-    <h1>
-        Our People
-    </h1>
-</section>
-    <!--little intro section to the page-->
-<section>
-    <p class="splash">Make your Mischief!</p>
-    <p>Use this directory to contact BTU staff about your interests or questions. 
-        Next to each person's image, is a list of things they can help you with, 
-        and their contact information. Reach out! We love to help.Become part of the team! Email Zack Weaver if you're interested in sharing your skills with the community
-    </p>
-</section>
-    <!--format for each person-->
-    <h2>
-        Faculty
-    </h2>
-    <section class="person">
-        <img src="../Assets/people/zackWeaver.jpg" alt="photo of zackWeaver in the btu lab">
-        <h3>
-            Zack Weaver | Director
-        </h3>
-        <h4>
-            <br>Director, BTU Lab | Assistant Teaching Professor, ATLAS Institute.
-            <br>zack.weaver@colorado.edu
-        </h4>
-        <h5>
-        <br>I am a wizard with:
-        </h5>
-        <ul>
-            <li>General Tools</li>
-            <li>Wood Shop</li>
-            <li>Sewing & Textiles</li>
-            <li>Electronics</li>
-            <li>Lasers (Lazor Wizard)</li>
-            <li>3D Printing</li>
-            <li>Shaper CNC</li>
-            <li>Way, way more</li>
-        </ul>
-    </section>
-    <h2>
-        Fall 2026 Staff
-    </h2>
+            <section class="person">
+                <img src="../Assets/people/bellaConsentino.jpg" alt="photo of bella">
+                <h3>Bella Consentino | Staff
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>Bella.Consentino@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Woodshop</li>
+                    <li>Electronics</li>
+                    <li>Lasers (Lazor Wizard)</li>
+                    <li>Soldering</li>
+                    <li>General Tools</li>
+                    <li>Sewing</li>
+                    <li>3D printing</li>
+                    <li>3D modeling (SketchUp & Blender specifically)</li>
+                    <li>Most of Adobe Suite</li>
+                    <li>Programming (C++, Python, JavaScript, Godot, +more)</li>
+                    <li>Being fitted up</li>
+                </ul>
+            </section>
+            
+            <section class="person">
+                <img src="../Assets/people/keturahDunn.jpg" alt="photo of keturah">
+                <h3>Keturah Dunn | Staff 
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>President, CU3D | Head 3D Printing Wizard
+                    <br>kedu1409@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>3D printing (including multicolor printing!)</li>
+                    <li>3D modeling</li>
+                    <li>Basic Sewing</li>
+                </ul>
+            </section>
 
-    <section class="person">
-        <img src="../Assets/people/bellaConsentino.jpg" alt="photo of bella">
-        <h3>Bella Consentino | Staff
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>Bella.Consentino@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Woodshop</li>
-            <li>Electronics</li>
-            <li>Lasers (Lazor Wizard)</li>
-            <li>Soldering</li>
-            <li>General Tools</li>
-            <li>Sewing</li>
-            <li>3D printing</li>
-            <li>3D modeling (SketchUp & Blender specifically)</li>
-            <li>Most of Adobe Suite</li>
-            <li>Programming (C++, Python, JavaScript, Godot, +more)</li>
-            <li>Being fitted up</li>
-        </ul>
-    </section>
-    
-    <section class="person">
-        <img src="../Assets/people/keturahDunn.jpg" alt="photo of keturah">
-        <h3>Keturah Dunn | Staff 
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>President, CU3D | Head 3D Printing Wizard
-            <br>kedu1409@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>3D printing (including multicolor printing!)</li>
-            <li>3D modeling</li>
-            <li>Basic Sewing</li>
-        </ul>
-    </section>
+            <section class="person">
+                <img src="../Assets/people/vaniChhay.png" alt="photo of Vani">
+                <h3>Vani Chhay | Staff
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>Vanica.Chhay@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>General tools</li>
+                    <li>Lasers (Lazor Wizard)</li>
+                    <li>Electronics/Circuits</li>
+                    <li>Prototyping/ Design</li>
+                    <li>3D printing</li>
+                    <li>Soldering</li>
+                    <li>Programming (Arduino (C++) , Processing (JS, Python))</li>
+                    <li>Sewing</li>
+                    <li>Overwatch</li>
+                </ul>
+            </section>
 
-    <section class="person">
-        <img src="../Assets/people/vaniChhay.png" alt="photo of Vani">
-        <h3>Vani Chhay | Staff
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>Vanica.Chhay@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>General tools</li>
-            <li>Lasers (Lazor Wizard)</li>
-            <li>Electronics/Circuits</li>
-            <li>Prototyping/ Design</li>
-            <li>3D printing</li>
-            <li>Soldering</li>
-            <li>Programming (Arduino (C++) , Processing (JS, Python))</li>
-            <li>Sewing</li>
-            <li>Overwatch</li>
-        </ul>
-    </section>
+            <section class="person">
+                <img src="../Assets/people/terriHughes.jpg" alt="photo of Terri">
+                <h3>Terri Hughes | Staff
+                </h3>
+                <h4>
+                    <br>(O.G. Kai's sister!)
+                    <br>Undergraduate Student, CMCI
+                    <br>Terri.Hughes@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>General Tools</li>
+                    <li>Sewing (Hand stitch + Machine)</li>
+                    <li>Dyeing Fabrics</li>
+                    <li>3D Modeling (Autodesk Inventor)</li>
+                    <li>3D Printing</li>
+                    <li>Woodshop Tools </li>
+                    <li>Chain Making (Chain Jewelry/Spikes/Studs)</li>
+                    <li>Soldering</li>
+                    <li>Telling you only the things you want to hear</li>
+                </ul>
+            </section>
 
-    <section class="person">
-        <img src="../Assets/people/terriHughes.jpg" alt="photo of Terri">
-        <h3>Terri Hughes | Staff
-        </h3>
-        <h4>
-            <br>(O.G. Kai's sister!)
-            <br>Undergraduate Student, CMCI
-            <br>Terri.Hughes@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>General Tools</li>
-            <li>Sewing (Hand stitch + Machine)</li>
-            <li>Dyeing Fabrics</li>
-            <li>3D Modeling (Autodesk Inventor)</li>
-            <li>3D Printing</li>
-            <li>Woodshop Tools </li>
-            <li>Chain Making (Chain Jewelry/Spikes/Studs)</li>
-            <li>Soldering</li>
-            <li>Telling you only the things you want to hear</li>
-        </ul>
-    </section>
+            <section class="person">
+                <img src="../Assets/people/leoHeuring.jpg" alt="photo of Leo">
+                <h3>Leo Heuring
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>Leo.Heuring@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>3D Printing (Ask if you want to try something fun on one of the CU3D printers!)</li>
+                    <li>3D Modeling</li>
+                    <li>CAD (Solidworks)</li>
+                    <li>Electronics</li>
+                    <li>Soldering</li>
+                    <li>Basic PCB design and assembly</li>
+                    <li>Programming (Python, Arduino)</li>
+                    <li>Fabrication</li>
+                </ul>
+            </section>
 
-    <section class="person">
-        <img src="../Assets/people/leoHeuring.jpg" alt="photo of Leo">
-        <h3>Leo Heuring
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>Leo.Heuring@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>3D Printing (Ask if you want to try something fun on one of the CU3D printers!)</li>
-            <li>3D Modeling</li>
-            <li>CAD (Solidworks)</li>
-            <li>Electronics</li>
-            <li>Soldering</li>
-            <li>Basic PCB design and assembly</li>
-            <li>Programming (Python, Arduino)</li>
-            <li>Fabrication</li>
-        </ul>
-    </section>
+            <section class="person">
+                <img src="../Assets/people/sageMorgan-LaRosa.jpg" alt="photo of keturah">
+                <h3>Sage Morgan-LaRosa
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>sage.morgan-larosa@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>3d modeling (Mostly blender, Sketch up)</li>
+                    <li>3d printing</li>
+                    <li>Coding (C++, Java, Python, typescript, Css)</li>
+                    <li>General electronics</li>
+                    <li>General tools</li>
+                    <li>The vast void of nerdem</li>
+                </ul>
+            </section>
 
-    <section class="person">
-        <img src="../Assets/people/sageMorgan-LaRosa.jpg" alt="photo of keturah">
-        <h3>Sage Morgan-LaRosa
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>sage.morgan-larosa@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>3d modeling (Mostly blender, Sketch up)</li>
-            <li>3d printing</li>
-            <li>Coding (C++, Java, Python, typescript, Css)</li>
-            <li>General electronics</li>
-            <li>General tools</li>
-            <li>The vast void of nerdem</li>
-        </ul>
-    </section>
+            <h2>
+                Volunteer & Emeritus Mischief Makers
+            </h2>
 
-    <h2>
-        Volunteer & Emeritus Mischief Makers
-    </h2>
+            <section class="person">
+                <img src="../Assets/people/dannyRankin.jpg" alt="photo of Danny">
+                <h3>Danny Rankin
+                </h3>
+                <h4>
+                    <br>Director, Whaaat!? Lab | Assistant Teaching Professor, ATLAS Institute.
+                    <br>danny.rankin@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Woodworking</li>
+                    <li>General shop skills</li>
+                    <li>Laser-cutting (Lazor Wizard)</li>
+                    <li>Installation design</li>
+                    <li>Custom game controllers</li>
+                </ul>
+            </section>
 
-    <section class="person">
-        <img src="../Assets/people/dannyRankin.jpg" alt="photo of Danny">
-        <h3>Danny Rankin
-        </h3>
-        <h4>
-            <br>Director, Whaaat!? Lab | Assistant Teaching Professor, ATLAS Institute.
-            <br>danny.rankin@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Woodworking</li>
-            <li>General shop skills</li>
-            <li>Laser-cutting (Lazor Wizard)</li>
-            <li>Installation design</li>
-            <li>Custom game controllers</li>
-        </ul>
-    </section>
+            <section class="person">
+                <img src="../Assets/people/autumnDavis.jpg" alt="photo of Autumn">
+                <h3>Autumn Davis
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>autumn.davis@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>General Tools</li>
+                    <li>Sewing (Machine/Hand)</li>
+                    <li><ul>
+                        <li>Graphic Design & various design software</li>
+                        <li>Adobe Suite</li>
+                        <li>Semiotics stuff (yay!)</li>
+                    </ul></li>
+                    <li>Soldering</li>
+                    <li>Laser cutting</li>
+                    <li>Basic 3d printing/modeling help</li>
+                </ul>
+            </section>
 
-   <section class="person">
-        <img src="../Assets/people/autumnDavis.jpg" alt="photo of Autumn">
-        <h3>Autumn Davis
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>autumn.davis@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>General Tools</li>
-            <li>Sewing (Machine/Hand)</li>
-            <li><ul>
-                <li>Graphic Design & various design software</li>
-                <li>Adobe Suite</li>
-                <li>Semiotics stuff (yay!)</li>
-             </ul></li>
-            <li>Soldering</li>
-            <li>Laser cutting</li>
-            <li>Basic 3d printing/modeling help</li>
-        </ul>
-    </section>
+            <section class="person">
+                <img src="../Assets/people/luckyBonniwell.jpg" alt="photo of lucky">
+                <h3>Lucky Bonniwell
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>thatcher.bonniwell@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Laser cutting</li>
+                    <li>Woodworking</li>
+                    <li>General shop skills</li>
+                    <li>Programming</li>
+                    <li>3D modeling</li>
+                    <li>Soldering</li>
+                </ul>
+            </section>
 
-    <section class="person">
-        <img src="../Assets/people/luckyBonniwell.jpg" alt="photo of lucky">
-        <h3>Lucky Bonniwell
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>thatcher.bonniwell@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Laser cutting</li>
-            <li>Woodworking</li>
-            <li>General shop skills</li>
-            <li>Programming</li>
-            <li>3D modeling</li>
-            <li>Soldering</li>
-        </ul>
-    </section>
+            <section class="person">
+                <img src="../Assets/people/yunessaRodriguez.jpg" alt="photo of Yunessa">
+                <h3>Yunessa Rodriguez
+                </h3>
+                <h4>
+                    <br>Undergraduate Students, ATLAS Institute
+                    <br>Yunessa.Rodriguez@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Rhino</li>
+                    <li>3D Printing</li>
+                    <li>Maybe sum laser cutter stuff</li>
+                    <li>Prototyping</li>
+                    <li>And more fun stuffs</li>
+                </ul>
+            </section>
 
-    <section class="person">
-        <img src="../Assets/people/yunessaRodriguez.jpg" alt="photo of Yunessa">
-        <h3>Yunessa Rodriguez
-        </h3>
-        <h4>
-            <br>Undergraduate Students, ATLAS Institute
-            <br>Yunessa.Rodriguez@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Rhino</li>
-            <li>3D Printing</li>
-            <li>Maybe sum laser cutter stuff</li>
-            <li>Prototyping</li>
-            <li>And more fun stuffs</li>
-        </ul>
-    </section>
+            <section class="person">
+                <img src="../Assets/people/jacobLeMons.jpg" alt="photo of Jacob">
+                <h3>Jacob Le Mons
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>jacob.lemons@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Design, Prototyping, Documentation</li>
+                    <li>General Tools</li>
+                    <li>Lasers</li>
+                    <li>3D Modelling (Onshape, SketchUp) & Printing</li>
+                    <li>Electronics & Soldering</li>
+                    <li>Woodshop & Basic Metalworking</li>
+                    <li>Basic Sewing & Weaving</li>
+                    <li>Sketching & Graphic Design</li>
+                    <li>Programming (C++, Python, HTML, CSS, JS)</li>
+                    <li>Parkour, Skateboarding, Conversational Japanese</li>
+                </ul>
+            </section>
 
-    <section class="person">
-        <img src="../Assets/people/jacobLeMons.jpg" alt="photo of Jacob">
-        <h3>Jacob Le Mons
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>jacob.lemons@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Design, Prototyping, Documentation</li>
-            <li>General Tools</li>
-            <li>Lasers</li>
-            <li>3D Modelling (Onshape, SketchUp) & Printing</li>
-            <li>Electronics & Soldering</li>
-            <li>Woodshop & Basic Metalworking</li>
-            <li>Basic Sewing & Weaving</li>
-            <li>Sketching & Graphic Design</li>
-            <li>Programming (C++, Python, HTML, CSS, JS)</li>
-            <li>Parkour, Skateboarding, Conversational Japanese</li>
-        </ul>
-    </section>
+            <section class="person">
+                <img src="../Assets/people/peteBurke.png" alt="photo of Pete">
+                <h3>Pete Burke
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>peter.burke-1@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>3D Modeling (SketchUp, Blender)</li>
+                    <li>3D Printing</li>
+                    <li>Woodworking</li>
+                    <li>General Tools</li>
+                    <li>Power Tools</li>
+                    <li>Adobe Suite</li>
+                    <li>Electronics</li>
+                    <li>Project Documentation</li>
+                    <li>Programming (C++, JS)</li>
+                    <li>Anything related to D&D</li>
+                </ul>
+            </section>
 
-    <section class="person">
-        <img src="../Assets/people/peteBurke.png" alt="photo of Pete">
-        <h3>Pete Burke
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>peter.burke-1@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>3D Modeling (SketchUp, Blender)</li>
-            <li>3D Printing</li>
-            <li>Woodworking</li>
-            <li>General Tools</li>
-            <li>Power Tools</li>
-            <li>Adobe Suite</li>
-            <li>Electronics</li>
-            <li>Project Documentation</li>
-            <li>Programming (C++, JS)</li>
-            <li>Anything related to D&D</li>
-        </ul>
-    </section>
+            <section class="person">
+                <img src="../Assets/people/ellyJensen.jpg" alt="photo of elly">
+                <h3>Elly Jensen
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>ellyse.jensen@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Sewing</li>
+                    <li>Adobe creative suite</li>
+                    <li>Lasers (Lazor Wizard)</li>
+                    <li>3D printing</li>
+                    <li>General tools</li>
+                </ul>
+            </section>
 
-    <section class="person">
-        <img src="../Assets/people/ellyJensen.jpg" alt="photo of elly">
-        <h3>Elly Jensen
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>ellyse.jensen@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Sewing</li>
-            <li>Adobe creative suite</li>
-            <li>Lasers (Lazor Wizard)</li>
-            <li>3D printing</li>
-            <li>General tools</li>
-        </ul>
-    </section>
+            <section class="person">
+                <img src="../Assets/people/krithikRanjan.jpg" alt="photo of Krithik">
+                <h3>
+                    Krithik Ranjan
+                </h3>
+                <h4>
+                    <br>PhD Student, ATLAS Institute
+                    <br>Krithik.Ranjan@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Electronics</li>
+                    <li>Soldering</li>
+                    <li>Oscilloscope (or The Omniscient ElectrO Scope) and other electrical tools</li>
+                    <li>PCB design and assembly</li>
+                </ul>
+            </section>
 
-    <section class="person">
-        <img src="../Assets/people/krithikRanjan.jpg" alt="photo of Krithik">
-        <h3>
-            Krithik Ranjan
-        </h3>
-        <h4>
-            <br>PhD Student, ATLAS Institute
-            <br>Krithik.Ranjan@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Electronics</li>
-            <li>Soldering</li>
-            <li>Oscilloscope (or The Omniscient ElectrO Scope) and other electrical tools</li>
-            <li>PCB design and assembly</li>
-        </ul>
-    </section>
+            <section class="person">
+                <img src="../Assets/people/paulBailey.jpg" alt="photo of Paul">
+                <h3>Paul Bailey (pictured, left)
+                </h3>
+                <h4>
+                    <br>Graduate Student, ATLAS Institute
+                    <br>geba2669@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Laser cutting at dawn (Lazor Wizard)</li>
+                    <li>Checking your 3D print at midnight</li>
+                    <li>GIS (Geographic Information Systems)</li>
+                    <li>Corel Draw</li>
+                    <li>Kinetic Sculpture Racing </li>
+                    <li>Human powered art vehicles</li>
+                </ul>
+            </section>
 
-    <section class="person">
-        <img src="../Assets/people/paulBailey.jpg" alt="photo of Paul">
-        <h3>Paul Bailey (pictured, left)
-        </h3>
-        <h4>
-            <br>Graduate Student, ATLAS Institute
-            <br>geba2669@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Laser cutting at dawn (Lazor Wizard)</li>
-            <li>Checking your 3D print at midnight</li>
-            <li>GIS (Geographic Information Systems)</li>
-            <li>Corel Draw</li>
-            <li>Kinetic Sculpture Racing </li>
-            <li>Human powered art vehicles</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/senaUctuk.jpg" alt="photo of Sena">
+                <h3>Sena Uctuk (Graduated!)
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute, Computer Science
+                    <br>sena.uctuk@colorado.edu | https://www.linkedin.com/in/suctuk/
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Prototyping/ modeling </li>
+                    <li>3D printing</li>
+                    <li>Lasers (Lazor Wizard)</li>
+                    <li>Acrylic, Metal, and Wood Fabrication</li>
+                    <li>Soldering</li>
+                    <li>Electronics</li>
+                    <li>Basic sewing machine stuff</li>
+                    <li>Code: C++, WebDev, JS, Python</li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/senaUctuk.jpg" alt="photo of Sena">
-        <h3>Sena Uctuk (Graduated!)
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute, Computer Science
-            <br>sena.uctuk@colorado.edu | https://www.linkedin.com/in/suctuk/
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Prototyping/ modeling </li>
-            <li>3D printing</li>
-            <li>Lasers (Lazor Wizard)</li>
-            <li>Acrylic, Metal, and Wood Fabrication</li>
-            <li>Soldering</li>
-            <li>Electronics</li>
-            <li>Basic sewing machine stuff</li>
-            <li>Code: C++, WebDev, JS, Python</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/arjunRamachandran.jpg" alt="photo of Arjun">
+                <h3>Arjun Ramachandran
+                </h3>
+                <h4>
+                    <br>Graduate Student, ATLAS Institute
+                    <br>arjun.ramachandran@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>General Tools</li>
+                    <li>Electronics/Circuits</li>
+                    <li>Drawing/Sketching</li>
+                    <li>Rapid Prototyping/Fabrication</li>
+                    <li>Robotics</li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/arjunRamachandran.jpg" alt="photo of Arjun">
-        <h3>Arjun Ramachandran
-        </h3>
-        <h4>
-            <br>Graduate Student, ATLAS Institute
-            <br>arjun.ramachandran@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>General Tools</li>
-            <li>Electronics/Circuits</li>
-            <li>Drawing/Sketching</li>
-            <li>Rapid Prototyping/Fabrication</li>
-            <li>Robotics</li>
-        </ul>
-    </section>
+            <section class="personGrey">       
+                <img src="../Assets/people/bartBaker.jpg" alt="photo of Bart">
+                <h3>Bart Baker (Graduated!)
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>bartholomew.baker@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Woodworking</li>
+                    <li>Fabrication</li>
+                    <li>Lasercutting</li>
+                    <li>Soldering</li>
+                    <li>Speakers</li>
+                    <li>Graphic Design</li>
+                    <li>Illustrator/InDesign</li>
+                    <li>All things music!</li>
+                </ul>
+            </section>
 
-    <section class="personGrey">       
-        <img src="../Assets/people/bartBaker.jpg" alt="photo of Bart">
-        <h3>Bart Baker (Graduated!)
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>bartholomew.baker@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Woodworking</li>
-            <li>Fabrication</li>
-            <li>Lasercutting</li>
-            <li>Soldering</li>
-            <li>Speakers</li>
-            <li>Graphic Design</li>
-            <li>Illustrator/InDesign</li>
-            <li>All things music!</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/xinWen.jpg" alt="photo of Xin">
+                <h3>Xin Wen
+                </h3>
+                <h4>
+                    <br>PhD Student, ATLAS Institute
+                    <br>xin.wen@colorado.edu 
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Sewing & Textiles</li>
+                    <li>Electronics</li>
+                    <li>Lasers (Lazor Wizard)</li>
+                    <li>3D Printing (I've done it elsewhere but still need to do the BTU 3D printing training)</li>
+                    <li>Programming</li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/xinWen.jpg" alt="photo of Xin">
-        <h3>Xin Wen
-        </h3>
-        <h4>
-            <br>PhD Student, ATLAS Institute
-            <br>xin.wen@colorado.edu 
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Sewing & Textiles</li>
-            <li>Electronics</li>
-            <li>Lasers (Lazor Wizard)</li>
-            <li>3D Printing (I've done it elsewhere but still need to do the BTU 3D printing training)</li>
-            <li>Programming</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/ashleyStafford.jpg" alt="photo of Ash">
+                <h3>Ashley Stafford (Graduated!)
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>Ashley.Stafford@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>General Tools</li>
+                    <li>Lasers (Lazor Wizard)</li>
+                    <li>Sewing</li>
+                    <li>3D Printing</li>
+                    <li>Basic Electronics</li>
+                    <li>The Horrors</li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/ashleyStafford.jpg" alt="photo of Ash">
-        <h3>Ashley Stafford (Graduated!)
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>Ashley.Stafford@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>General Tools</li>
-            <li>Lasers (Lazor Wizard)</li>
-            <li>Sewing</li>
-            <li>3D Printing</li>
-            <li>Basic Electronics</li>
-            <li>The Horrors</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/kaiAdamchak.jpg" alt="photo of Kai">
+                <h3>Kai Adamchak (Graduated!)
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>kai.adamchack@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>3D modeling</li>
+                    <li>Adobe</li>
+                    <li>Procreate/Digital Art</li>
+                    <li>Prototyping</li>
+                    <li>Artsy Stuff</li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/kaiAdamchak.jpg" alt="photo of Kai">
-        <h3>Kai Adamchak (Graduated!)
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>kai.adamchack@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>3D modeling</li>
-            <li>Adobe</li>
-            <li>Procreate/Digital Art</li>
-            <li>Prototyping</li>
-            <li>Artsy Stuff</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/sophieBerry.jpg" alt="photo of Sophie">
+                <h3>Sophie Berry (Graduated!)
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>sophie.berry@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Prototyping/ modeling </li>
+                    <li>3D printing</li>
+                    <li>Lasers (Lazor Wizard)</li>
+                    <li>General tools </li>
+                    <li>Soldering</li>
+                    <li>Electronics</li>
+                    <li>Basics sewing machine stuff</li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/sophieBerry.jpg" alt="photo of Sophie">
-        <h3>Sophie Berry (Graduated!)
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>sophie.berry@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Prototyping/ modeling </li>
-            <li>3D printing</li>
-            <li>Lasers (Lazor Wizard)</li>
-            <li>General tools </li>
-            <li>Soldering</li>
-            <li>Electronics</li>
-            <li>Basics sewing machine stuff</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/kayaWalker.jpg" alt="photo of Kaya">
+                <h3>Kaya Walker (Graduated!)
+                </h3>
+                <h4>
+                    <br>Undgergraduate Student, ATLAS Institute
+                    <br>kaya.walker@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>General Tools</li>
+                    <li>Sewing and Textiles</li>
+                    <li>LASERS!</li>
+                    <li>Electronics</li>
+                    <li>Ceramics</li>
+                    <li>ATLAS Social Media (LMK if you make cool things!)</li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/kayaWalker.jpg" alt="photo of Kaya">
-        <h3>Kaya Walker (Graduated!)
-        </h3>
-        <h4>
-            <br>Undgergraduate Student, ATLAS Institute
-            <br>kaya.walker@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>General Tools</li>
-            <li>Sewing and Textiles</li>
-            <li>LASERS!</li>
-            <li>Electronics</li>
-            <li>Ceramics</li>
-            <li>ATLAS Social Media (LMK if you make cool things!)</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/nefeliHadjiyiannis.jpg" alt="photo of nefeli">
+                <h3>Nefeli Hadjiyiannis (Graduated!)
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>nefeli.hadjiyiannis@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Sewing/Textiles</li>
+                    <li>3D modeling</li>
+                    <li>Adobe & Animation</li>
+                    <li>Soldering</li>
+                    <li>Simple Electronics</li>
+                    <li>Programming</li>
+                    <li>General Tools</li>
+                    <li>Vibes</li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/nefeliHadjiyiannis.jpg" alt="photo of nefeli">
-        <h3>Nefeli Hadjiyiannis (Graduated!)
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>nefeli.hadjiyiannis@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Sewing/Textiles</li>
-            <li>3D modeling</li>
-            <li>Adobe & Animation</li>
-            <li>Soldering</li>
-            <li>Simple Electronics</li>
-            <li>Programming</li>
-            <li>General Tools</li>
-            <li>Vibes</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/andrewWidner.jpg" alt="photo of andrew">
+                <h3>Andrew Widner (Graduated!)
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, CU3D President, ATLAS Ambassador
+                    <br>Head 3D Printer Wizard
+                    <br>anwi5661@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Advanced 3D printing </li>
+                    <li>CAD (Fusion / OnShape)</li>
+                    <li>3D modeling / Digital sculpting</li>
+                    <li>Model rendering / Animation</li>
+                    <li>Everything Blender</li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/andrewWidner.jpg" alt="photo of andrew">
-        <h3>Andrew Widner (Graduated!)
-        </h3>
-        <h4>
-            <br>Undergraduate Student, CU3D President, ATLAS Ambassador
-            <br>Head 3D Printer Wizard
-            <br>anwi5661@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Advanced 3D printing </li>
-            <li>CAD (Fusion / OnShape)</li>
-            <li>3D modeling / Digital sculpting</li>
-            <li>Model rendering / Animation</li>
-            <li>Everything Blender</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/quinnPearson.jpg" alt="photo of Quinn">
+                <h3>Quinn Pearson
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>Quinn.Pearson@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Lasers</li>
+                    <li>Electronics</li>
+                    <li>General tools</li>
+                    <li>Woodshop</li>
+                    <li>Soldering</li>
+                    <li>Creative problem solving</li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/quinnPearson.jpg" alt="photo of Quinn">
-        <h3>Quinn Pearson
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>Quinn.Pearson@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Lasers</li>
-            <li>Electronics</li>
-            <li>General tools</li>
-            <li>Woodshop</li>
-            <li>Soldering</li>
-            <li>Creative problem solving</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/perryOwens.jpg" alt="photo of perry">
+                <h3>Perry Owens
+                </h3>
+                <h4>
+                    <br>Graduate Student, ATLAS Institute
+                    <br>Perry.Owens@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Woodshop</li>
+                    <li>General Tools</li>
+                    <li>Lasers</li>
+                    <li>3D modeling</li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/perryOwens.jpg" alt="photo of perry">
-        <h3>Perry Owens
-        </h3>
-        <h4>
-            <br>Graduate Student, ATLAS Institute
-            <br>Perry.Owens@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Woodshop</li>
-            <li>General Tools</li>
-            <li>Lasers</li>
-            <li>3D modeling</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/zoeTurner.jpg" alt="photo of zoe">
+                <h3>Zoe Turner
+                </h3>
+                <h4>
+                    <br>Undergraduate, ENVD
+                    <br>zotu4246@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Textiles and sewing </li>
+                    <li>Laser cutting </li>
+                    <li>3D Printing and Modeling </li>
+                    <li>Woodworking and hand tools </li>
+                    <li>Welding</li>
+                    <li>Photography</li>
+                    <li>Hand drawing and rendering </li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/zoeTurner.jpg" alt="photo of zoe">
-        <h3>Zoe Turner
-        </h3>
-        <h4>
-            <br>Undergraduate, ENVD
-            <br>zotu4246@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Textiles and sewing </li>
-            <li>Laser cutting </li>
-            <li>3D Printing and Modeling </li>
-            <li>Woodworking and hand tools </li>
-            <li>Welding</li>
-            <li>Photography</li>
-            <li>Hand drawing and rendering </li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/atlasZaina.jpg" alt="photo of atlas">
+                <h3>Atlas Zaina
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>Atlas.Zaina@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>General Tools</li>
+                    <li>Wood Shop</li>
+                    <li>Sewing & Textiles</li>
+                    <li>Lasers</li>
+                    <li>Funny little crafts and more!</li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/atlasZaina.jpg" alt="photo of atlas">
-        <h3>Atlas Zaina
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>Atlas.Zaina@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>General Tools</li>
-            <li>Wood Shop</li>
-            <li>Sewing & Textiles</li>
-            <li>Lasers</li>
-            <li>Funny little crafts and more!</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/kaiHughes.jpg" alt="photo of kai">
+                <h3>Kai Hughes
+                </h3>
+                <h4>
+                    <br>kai.hughes@colorado.edu 
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>3D printing and 3D modeling</li>
+                    <li>Digital art and graphic design </li>
+                    <li>Woodshop stuff</li>
+                    <li>Coding languages</li>
+                    <li>Mold making / casting </li>
+                    <li>Creating problems </li>
+                    <li>Solving problems </li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/kaiHughes.jpg" alt="photo of kai">
-        <h3>Kai Hughes
-        </h3>
-        <h4>
-            <br>kai.hughes@colorado.edu 
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>3D printing and 3D modeling</li>
-            <li>Digital art and graphic design </li>
-            <li>Woodshop stuff</li>
-            <li>Coding languages</li>
-            <li>Mold making / casting </li>
-            <li>Creating problems </li>
-            <li>Solving problems </li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/jeremiahKlinkerman.jpg" alt="photo of Jeremiah">
+                <h3>Jeremiah Klinkerman (image approximate)
+                </h3>
+                <h4>
+                    <br>Undergraduate, Dinosaur Studies
+                    <br>jeremiah.klinkerman@colorado.edu 
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>General Tools</li>
+                    <li>Wood Shop</li>
+                    <li>Sewing & Textiles</li>
+                    <li>2D Drawing</li>
+                    <li>3D Sculpture</li>
+                    <li>Dinosaurs & Rocks</li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/jeremiahKlinkerman.jpg" alt="photo of Jeremiah">
-        <h3>Jeremiah Klinkerman (image approximate)
-        </h3>
-        <h4>
-            <br>Undergraduate, Dinosaur Studies
-            <br>jeremiah.klinkerman@colorado.edu 
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>General Tools</li>
-            <li>Wood Shop</li>
-            <li>Sewing & Textiles</li>
-            <li>2D Drawing</li>
-            <li>3D Sculpture</li>
-            <li>Dinosaurs & Rocks</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/hunterAllen-Bonney.jpg" alt="photo of hunter">
+                <h3>Hunter Allen-Bonney
+                </h3>
+                <h4>
+                    <br>Graduate Student, ATLAS Institute
+                    <br>Hunter.allenbonney@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Photography</li>
+                    <li>Documentation</li>
+                    <li>ATLAS Social Media</li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/hunterAllen-Bonney.jpg" alt="photo of hunter">
-        <h3>Hunter Allen-Bonney
-        </h3>
-        <h4>
-            <br>Graduate Student, ATLAS Institute
-            <br>Hunter.allenbonney@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Photography</li>
-            <li>Documentation</li>
-            <li>ATLAS Social Media</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/sWu.jpg" alt="photo of s">
+                <h3>S Wu (currently in Canada!)
+                </h3>
+                <h4>
+                    <br>PhD Student, ATLAS Institute
+                    <br>shanel.wu@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Anything textiles/yarn</li>
+                    <li>Electronics + circuits</li>
+                    <li>General tools</li>
+                    <li>Debugging code</li>
+                    <li>Brainstorming + prototyping</li>
+                    <li>How to survive academic writing</li>
+                    <li>A strange smattering of many other things</li>
+                </ul>
+            </section>
 
-     <section class="personGrey">
-        <img src="../Assets/people/sWu.jpg" alt="photo of s">
-        <h3>S Wu (currently in Canada!)
-        </h3>
-        <h4>
-            <br>PhD Student, ATLAS Institute
-            <br>shanel.wu@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Anything textiles/yarn</li>
-            <li>Electronics + circuits</li>
-            <li>General tools</li>
-            <li>Debugging code</li>
-            <li>Brainstorming + prototyping</li>
-            <li>How to survive academic writing</li>
-            <li>A strange smattering of many other things</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/mcClainMartensen.jpg" alt="photo of McClain">
+                <h3>McClain Martensen (Graduated!)
+                </h3>
+                <h4>
+                    <br>Undergraduate Student, ATLAS Institute
+                    <br>moma0500@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>3D printing</li>
+                    <li>3D modelling</li>
+                    <li>Woodshop</li>
+                    <li>Electronics/Soldering</li>
+                    <li>Sewing/Textiles</li>
+                    <li>make</li>
+                </ul>
+            </section>
 
-     <section class="personGrey">
-        <img src="../Assets/people/mcClainMartensen.jpg" alt="photo of McClain">
-        <h3>McClain Martensen (Graduated!)
-        </h3>
-        <h4>
-            <br>Undergraduate Student, ATLAS Institute
-            <br>moma0500@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>3D printing</li>
-            <li>3D modelling</li>
-            <li>Woodshop</li>
-            <li>Electronics/Soldering</li>
-            <li>Sewing/Textiles</li>
-            <li>make</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/grayAssi.jpg" alt="photo of Gray">
+                <h3>
+                    Gray Assi (Graduated!)
+                </h3>
+                <h4>
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Prototyping</li>
+                    <li>Experience design</li>
+                    <li>Sewing + textiles</li>
+                    <li>Soldering + electronics</li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/grayAssi.jpg" alt="photo of Gray">
-        <h3>
-            Gray Assi (Graduated!)
-        </h3>
-        <h4>
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Prototyping</li>
-            <li>Experience design</li>
-            <li>Sewing + textiles</li>
-            <li>Soldering + electronics</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/doverHoresh.jpg" alt="photo of dover">
+                <h3>Dover Horesh (Graduated!)
+                </h3>
+                <h4>
+                    <br>Graduate Student, ATLAS Institute
+                    <br>diho2148@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Laser Cutter (Lazor Wizard)</li>
+                    <li>Wood shop </li>
+                    <li>Sewing Machine </li>
+                    <li>Photography</li>
+                </ul>
+            </section>
 
-    <section class="personGrey">
-        <img src="../Assets/people/doverHoresh.jpg" alt="photo of dover">
-        <h3>Dover Horesh (Graduated!)
-        </h3>
-        <h4>
-            <br>Graduate Student, ATLAS Institute
-            <br>diho2148@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Laser Cutter (Lazor Wizard)</li>
-            <li>Wood shop </li>
-            <li>Sewing Machine </li>
-            <li>Photography</li>
-        </ul>
-    </section>
-
-    <section class="personGrey">
-        <img src="../Assets/people/katieGilchrist.jpg" alt="photo of Katie">
-        <h3>Katie Gilchrist (Graduated!)
-        </h3>
-        <h4>
-            <br>Graduate Student, ATLAS Institute
-            <br>kagi6366@colorado.edu
-        </h4>
-        <h5>
-        <br>My skills include:
-        </h5>
-        <ul>
-            <li>Basic Tools</li>
-            <li>Soldering & Electronics</li>
-            <li>Code</li>
-            <li>3D Modeling</li>
-            <li>More as I learn them!</li>
-        </ul>
-    </section>
+            <section class="personGrey">
+                <img src="../Assets/people/katieGilchrist.jpg" alt="photo of Katie">
+                <h3>Katie Gilchrist (Graduated!)
+                </h3>
+                <h4>
+                    <br>Graduate Student, ATLAS Institute
+                    <br>kagi6366@colorado.edu
+                </h4>
+                <h5>
+                <br>My skills include:
+                </h5>
+                <ul>
+                    <li>Basic Tools</li>
+                    <li>Soldering & Electronics</li>
+                    <li>Code</li>
+                    <li>3D Modeling</li>
+                    <li>More as I learn them!</li>
+                </ul>
+            </section>
+        </div>
+        
+    </main>
+    <footer>
+        <p class="small-text">* Note this is not the official BTU website.</p>
+    </footer>
 </body>
 </html>

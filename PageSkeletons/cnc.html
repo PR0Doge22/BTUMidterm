@@ -5,31 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../CSS/GeneralStyles.css">
+    <link rel="stylesheet" href="../CSS/GeneralStylesNew.css">
 </head>
 <body>
-    <h1>
-        CNC
-    </h1>
+    <header>
+        <!-- Nav Bar Content -->
+        
 
-    <img src="../Assets/cnc1.jpg" alt="photo of shaper origin machine on table, with example dominos.">
+        <nav class="navBanner">
+            <ul>
+                <li><a href=index.html><img src="../Assets/btu logo.png" alt="4 Section Diamond with B, T, U, and Lab in each section. Colors based on a fire diamond." width="50px" id="BannerIcon"> BTU Lab</a></li>
+                <li><a href="ourPeople.html">People</a></li>
+                <li><a href="calendar.html">Calender</a></li>
+                <li><a href="rulesAndPolicies.html">Rules and Policies</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><button onclick="toggleMenu()" class="dropDownButton">Stations</button></li>
+            </ul>
+        </nav>
 
-    <p class="splash">
-        CNC equipment and materials are labeled <b>BLUE</b>.
-    </p>
-    <p>
-        <b>FACULTY</b>: Class assignments requiring Shaper CNC should be coordinated by LAs, TAs, or instructors. (Questions: "zack.weaver@colorado.edu")
-        <br><b>STUDENTS</b>: Assistance with Shaper CNC for class assignments should be coordinated with class LAs or TAs first, then "BTU Mischief Makers", if available.
-        <br><b>EVERYBODY</b>: A brief training is required before using the Shaper CNC.
-    </p>
-    <div>
-        <h2>'Cause I'm C N C ...Dynamite!</h2>
-        <p>Thanks to generous support BTU purchased a Shaper Origin CNC router in 2026!</p>
-        <p>Basic operation of the Shaper can be found here: <a href="https://www.youtube.com/watch?v=QxjE5WOAGi4">www.youtube.com/watch?v=QxjE5WOAGi4</a></p>
-        <p>The Shaper is a precision (expensive) tool! Please contact Zack at <a href="mailto:zack.weaver@colorado.edu">zack.weaver@colorado.edu</a> to get started.</p>
-    </div>
+        <nav id="dropDownContent" class="dropDownMenu">
+            <ul>
+                <li><a href="3dPrinters.html">3D Printers</a></li>
+                <li><a href="cnc.html">CNC Machine</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="lasers.html">Lasers</a></li>
+                <li><a href="sewingAndTextiles.html">Sewing & Textiles</a></li>
+                <li><a href="Tools.html">Tools</a></li>
+                <li><a href="Woodshop.html">Woodshop</a></li>
+            </ul>
+        </nav>
+        
+        <script>
+            function toggleMenu() {
+                document.getElementById("dropDownContent").classList.toggle("displayMenu");
+            }
+        </script>
+    </header>
+
+    <main>
+        <h1>
+            CNC
+        </h1>
+
+        <p class="splashB">
+            CNC equipment and materials are labeled <b>BLUE</b>.
+        </p>
+
+        <img class="splashImage" src="../Assets/cnc1.jpg" alt="photo of shaper origin machine on table, with example dominos.">
+
+    
+        <p class="body-text">
+            <b>FACULTY</b>: Class assignments requiring 3D printing should be coordinated by LAs, TAs, or instructors. (Questions: "<a href="mailto:zack.weaver@colorado.edu">zack.weaver@colorado.edu</a>")
+            <br><b>STUDENTS</b>: Assistance with 3D Printing for class assignments should be coordinated with class LAs or TAs first, then "BTU Mischief Makers", if available.
+            <br><b>EVERYBODY</b>: 3D printing hardware/software update frequently! Make sure you stay up to date, too.
+        </p>
+        <div>
+            <h2>'Cause I'm C N C ...Dynamite!</h2>
+            <p class="body-text">Thanks to generous support BTU purchased a Shaper Origin CNC router in 2026!</p>
+            <p class="body-text">Basic operation of the Shaper can be found here: <a href="https://www.youtube.com/watch?v=QxjE5WOAGi4">www.youtube.com/watch?v=QxjE5WOAGi4</a></p>
+            <p class="body-text">The Shaper is a precision (expensive) tool! Please contact Zack at <a href="mailto:zack.weaver@colorado.edu">zack.weaver@colorado.edu</a> to get started.</p>
+        </div>
+    </main>
+    
     <footer>
-        Materials: <b>BTU LAB IS NOT A FREE SUPPLY STORE</b>. But there are many ways to barter, including displaying your work in BTU, tagging us in social media, offering workshops, volunteering to organize supplies, and more. If you need something, we ask that you give something in return.
+        <p class="small-text">Materials: <b>BTU LAB IS NOT A FREE SUPPLY STORE</b>. But there are many ways to barter, including displaying your work in BTU, tagging us in social media, offering workshops, volunteering to organize supplies, and more. If you need something, we ask that you give something in return. </p>
+        <p class="small-text">* Note this is not the official BTU website.</p>
     </footer>
 </body>
 </html>

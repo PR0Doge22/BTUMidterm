@@ -4,63 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lasers</title>
-    <link rel="stylesheet" href="../CSS/GeneralStyles.css">
+    <link rel="stylesheet" href="../CSS/GeneralStylesNew.css">
 </head>
 <body>
-    <h1>
-        Lasers!
-    </h1>
-    <p class="splash">
-        Laser equipment and materials are labeled <b>RED</b>!!!
-    </p>
-    <p>
-        <b>FACULTY</b>: Class assignments requiring laser cutting should be facilitated by LAs or TAs, or instructors.
-        <br><b>STUDENTS</b>: Assistance with laser cutting for class assignments should be facilitated by class LAs or TAs first, then "Lazor Wizards", if available.
-        <br><b>EVERYBODY</b>: *Laser cutter access is separate from general BTU access and REQUIRES AN ORIENTATION.*
-    </p>
-    <h2>
-        Laser Cutter Orientations
-    </h2>
-        <img src="../Assets/laser1.jpg" alt="image of four ace cards that were laser cut and engraved">
-    <p>
-        The Laser Cutter Orientation schedule can be found on the BTU Lab Calendar.
-        <br>Anyone can gain access to operate the laser cutter using the process described below.
-        <br>Prior to that, schedule a time to complete your laser cutting job with one of the Lazor Wizards listed below, and on the BTU Mischief Makers page.
-    </p>
-    <h2>
-        LASER CUTTING EQUIPMENT & MATERIALS
-    </h2>
-    <p>
-        <ul>
+    <header>
+        <nav class="navBanner">
+            <ul>
+                <li><a href=index.html><img src="../Assets/btu logo.png" alt="4 Section Diamond with B, T, U, and Lab in each section. Colors based on a fire diamond." width="50px" id="BannerIcon"> BTU Lab</a></li>
+                <li><a href="ourPeople.html">People</a></li>
+                <li><a href="calendar.html">Calender</a></li>
+                <li><a href="rulesAndPolicies.html">Rules and Policies</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><button onclick="toggleMenu()" class="dropDownButton">Stations</button></li>
+            </ul>
+        </nav>
+
+        <nav id="dropDownContent" class="dropDownMenu">
+            <ul>
+                <li><a href="3dPrinters.html">3D Printers</a></li>
+                <li><a href="cnc.html">CNC Machine</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="lasers.html">Lasers</a></li>
+                <li><a href="sewingAndTextiles.html">Sewing & Textiles</a></li>
+                <li><a href="Tools.html">Tools</a></li>
+                <li><a href="Woodshop.html">Woodshop</a></li>
+            </ul>
+        </nav>
+        
+        <script>
+            function toggleMenu() {
+                document.getElementById("dropDownContent").classList.toggle("displayMenu");
+            }
+        </script>
+    </header>
+
+    <main>
+        <h1>
+            Lasers!
+        </h1>
+        <p class="splashR">
+            Laser equipment and materials are labeled <b>RED</b>!!!
+        </p>
+        <p class="body-text">
+            <b>FACULTY</b>: Class assignments requiring 3D printing should be coordinated by LAs, TAs, or instructors. (Questions: "<a href="mailto:zack.weaver@colorado.edu">zack.weaver@colorado.edu</a>")
+            <br><b>STUDENTS</b>: Assistance with 3D Printing for class assignments should be coordinated with class LAs or TAs first, then "BTU Mischief Makers", if available.
+            <br><b>EVERYBODY</b>: 3D printing hardware/software update frequently! Make sure you stay up to date, too.
+        </p>
+        <h2>
+            Laser Cutter Orientations
+        </h2>
+        
+        <img class="splashImage" src="../Assets/laser1.jpg" alt="image of four ace cards that were laser cut and engraved">
+        
+        <p class="body-text">
+            The Laser Cutter Orientation schedule can be found on the BTU Lab Calendar.
+            <br>Anyone can gain access to operate the laser cutter using the process described below.
+            <br>Prior to that, schedule a time to complete your laser cutting job with one of the Lazor Wizards listed below, and on the BTU Mischief Makers page.
+        </p>
+        <h2>
+            LASER CUTTING EQUIPMENT & MATERIALS
+        </h2>
+        
+        <ul class="body-text">
             <li>75 Watt CO2 Laser, 30" x 18" bed size
-                <br>[762mm x 457mm]
+                <br class="small-text">[762mm x 457mm]
             </li>
             <li>75 Watt CO2 Laser, 40" x 28" bed size
-                <br>[1016mm x 711mm]
+                <br class="small-text">[1016mm x 711mm]
             </li>
             <li>Various Plywood</li>
             <li>Various Plastics</li>
             <li>Various Cardboard / Papers</li>
             <li>Various Fabrics</li>
         </ul>
-    <h2>
-        TO GAIN FULL INDEPENDENT ACCESS TO LASER CUTTERS:
-    </h2>
-    <img src="../Assets/laser2.png" alt="Image of superhero with laser eye goggles.">
-    <ol>
-        <li>Complete the laser cutter orientation. Calendar <b>HERE</b>.</li>
-        <li>Class assignments, where you need assistance, are facilitated by LAs, TAs, and instructors first, then "Lazor Wizards", if available. (See below).</li>
-        <li>As long as you need assistance, schedule laser appointments with a BTU Lazor Wizard listed below and on the BTU Mischief Makers page.</li>
-        <li>Lazor Wizards provide "guided access". We will help you as much, or as little as needed.</li>
-        <li>When you demonstrate independent and proper use of the laser cutter, you will have full access.</li>
-        <li>Block 1-hour times on the whiteboard next to each laser. (Not during scheduled orientations.)</li>
-    </ol>
-    <h2>
-        BTU Lazor Wizards
-    </h2>
-    
+        
+        <h2>
+            TO GAIN FULL INDEPENDENT ACCESS TO LASER CUTTERS:
+        </h2>
+        
+        <ol class="body-text">
+            <li>Complete the laser cutter orientation. Calendar <b>HERE</b>.</li>
+            <li>Class assignments, where you need assistance, are facilitated by LAs, TAs, and instructors first, then "Lazor Wizards", if available. (See below).</li>
+            <li>As long as you need assistance, schedule laser appointments with a BTU Lazor Wizard listed below and on the BTU Mischief Makers page.</li>
+            <li>Lazor Wizards provide "guided access". We will help you as much, or as little as needed.</li>
+            <li>When you demonstrate independent and proper use of the laser cutter, you will have full access.</li>
+            <li>Block 1-hour times on the whiteboard next to each laser. (Not during scheduled orientations.)</li>
+        </ol>
+        <h2>
+            BTU Lazor Wizards
+        </h2>
+
+        <img class="splashImage" src="../Assets/laser2.png" alt="Image of superhero with laser eye goggles.">
+        <p class="body-text">
+            Email all Lazor Wizards:
+            <br> <b>Subject must say: "Lazor Wizards"</b>
+            <br> Copy/Paste these addresses:
+            <br> [geba2669@colorado.edu,  zaja9653@colorado.edu, xin.wen@colorado.edu, sena.ucuk@colorado.edu, ellyse.jensen@colorado.edu]
+        </p>
+
+
+    </main> 
+
     <footer>
-        Materials: <b>BTU LAB IS NOT A FREE SUPPLY STORE</b>. But there are many ways to barter, including displaying your work in BTU, tagging us in social media, offering workshops, volunteering to organize supplies, and more. If you need something, we ask that you give something in return.
+        <p class="small-text">Materials: <b>BTU LAB IS NOT A FREE SUPPLY STORE</b>. But there are many ways to barter, including displaying your work in BTU, tagging us in social media, offering workshops, volunteering to organize supplies, and more. If you need something, we ask that you give something in return. </p>
+        <p class="small-text">* Note this is not the official BTU website.</p>
     </footer>
 </body>
 </html>

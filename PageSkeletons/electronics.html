@@ -4,43 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electronics</title>
-    <link rel="stylesheet" href="../CSS/GeneralStyles.css">
+    <link rel="stylesheet" href="../CSS/GeneralStylesNew.css">
 </head>
 
 <body>
-    <h1>Electronics</h1>
+    <header>
+        <nav class="navBanner">
+            <ul>
+                <li><a href=index.html><img src="../Assets/btu logo.png" alt="4 Section Diamond with B, T, U, and Lab in each section. Colors based on a fire diamond." width="50px" id="BannerIcon"> BTU Lab</a></li>
+                <li><a href="ourPeople.html">People</a></li>
+                <li><a href="calendar.html">Calender</a></li>
+                <li><a href="rulesAndPolicies.html">Rules and Policies</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><button onclick="toggleMenu()" class="dropDownButton">Stations</button></li>
+            </ul>
+        </nav>
 
-    <img src="../Assets/electronics1.jpg" alt="Photo electronics station in BTU lab. There are shevles with 
-    electric Components and work benches with soldering irons.">
+        <nav id="dropDownContent" class="dropDownMenu">
+            <ul>
+                <li><a href="3dPrinters.html">3D Printers</a></li>
+                <li><a href="cnc.html">CNC Machine</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="lasers.html">Lasers</a></li>
+                <li><a href="sewingAndTextiles.html">Sewing & Textiles</a></li>
+                <li><a href="Tools.html">Tools</a></li>
+                <li><a href="Woodshop.html">Woodshop</a></li>
+            </ul>
+        </nav>
+        
+        <script>
+            function toggleMenu() {
+                document.getElementById("dropDownContent").classList.toggle("displayMenu");
+            }
+        </script>
+    </header>
 
-    <p class="splash">
-        Electronics equipment is labeled... teal? Cyan? Turquoise? Aqua? Oh, lord... <b>THIS COLOR</b>!
-    </p>
+    <main>
+        <h1>Electronics</h1>
 
-    <p>
-        With great power...
-        <br>Electronics and coding training happens as requested by staff and/or community members. It is also the subject of some ATLAS classes and BTU workshops. See workshops on the BTU Lab Calendar.
-        <br>See the BTU Mischief Maker page to contact one of our community experts to get you started.
-    </p>
+        <p class="splashAq">
+            Electronics equipment is labeled... teal? Cyan? Turquoise? Aqua? Oh, lord... <b>THIS COLOR</b>!
+        </p>
 
-    <h2>ELECTRONICS EQUIPMENT &amp; SUPPLIES</h2>
+        <img class="splashImage" src="../Assets/electronics1.jpg" alt="Photo electronics station in BTU lab. There are shevles with 
+        electric Components and work benches with soldering irons.">
 
-    <ul>
-        <li>Solder Irons &amp; Accessories</li>
-        <li>Bench Top Power Supplies</li>
-        <li>Soldering Rework Station</li>
-        <li>Digital Oscilloscope</li>
-        <li>Arduino / Raspberry Pi ecosystem</li>
-        <li>Various Power Components (V=I*R stuff!)</li>
-        <li>Various Input Components</li>
-        <li>Various Output Components</li>
-        <li>LilyPad</li>
-        <li>Prototyping Supplies</li>
-        <li>UhhhhANDMORE!</li>
-    </ul>
+        <h2>With great power...</h2>
+
+        <p class="body-text">
+            <br>Electronics and coding training happens as requested by staff and/or community members. It is also the subject of some ATLAS classes and BTU workshops. See workshops on the BTU Lab Calendar.
+            <br>See the BTU Mischief Maker page to contact one of our community experts to get you started.
+        </p>
+
+        <h2>ELECTRONICS EQUIPMENT &amp; SUPPLIES</h2>
+
+        <ul class="body-text">
+            <li>Solder Irons &amp; Accessories</li>
+            <li>Bench Top Power Supplies</li>
+            <li>Soldering Rework Station</li>
+            <li>Digital Oscilloscope</li>
+            <li>Arduino / Raspberry Pi ecosystem</li>
+            <li>Various Power Components (V=I*R stuff!)</li>
+            <li>Various Input Components</li>
+            <li>Various Output Components</li>
+            <li>LilyPad</li>
+            <li>Prototyping Supplies</li>
+            <li>UhhhhANDMORE!</li>
+        </ul>
+    </main>
 
     <footer>
-        Materials: <b>BTU LAB IS NOT A FREE SUPPLY STORE</b>. But there are many ways to barter, including displaying your work in BTU, tagging us in social media, offering workshops, volunteering to organize supplies, and more. If you need something, we ask that you give something in return.
+        <p class="small-text">Materials: <b>BTU LAB IS NOT A FREE SUPPLY STORE</b>. But there are many ways to barter, including displaying your work in BTU, tagging us in social media, offering workshops, volunteering to organize supplies, and more. If you need something, we ask that you give something in return. </p>
+        <p class="small-text">* Note this is not the official BTU website.</p>
     </footer>
 </body>
 </html>

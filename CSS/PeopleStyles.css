@@ -1,0 +1,326 @@
+:root {
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+
+    --color-primary: #241d20;     /* Vibrant Blue - Main Brand Color */
+    --color-secondary: #0F78BD;   /* Emerald Green - Complementary Action Color */
+    --color-accent: #cf2027;      /* Passionate Red - Highlight / Warning Color */
+    --color-neutral: #241d20;     /* Deep Slate Gray - Neutral Text and Background */
+    --color-highlight: #ffec82;   /* Bright Yellow - Accent / Attention Color */
+
+    --color-text-light: white;
+    --color-background: rgb(220, 220, 220);
+    --color-text-small: rgb(137, 137, 137);
+
+    --font-primary: 'Archivo Black', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-secondary: 'helvetica-lt-pro', -apple-system, sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+    background-color: var(--color-background);
+}
+
+body {
+    margin: 0;
+}
+
+::selection {
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+}
+
+a {
+    color: var(--color-secondary);
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+nav.navBanner {
+    width: 98%;
+    background-color: var(--color-secondary);
+    padding-left: .5%;
+    padding-right: 1.5%;
+    padding-top: var(--spacing-sm);
+    padding-bottom: var(--spacing-sm);
+    position: fixed;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.3);
+    
+}
+
+nav.navBanner ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: var(--spacing-sm);
+}
+
+
+nav.navBanner ul li {
+    font-family: var(--font-primary);
+    align-items: center;
+    align-content: center;
+    background-color: var(--color-primary);
+    height: 5rem;
+    width: 100%;
+    border-radius: var(--spacing-sm);
+    font-size: 20px;
+}
+
+nav.navBanner ul li a {
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 80%;
+    margin-right: -80%;
+
+    padding-top: 10%;
+    margin-top: -10%;
+    padding-bottom: 10%;
+    margin-bottom: -10%;
+    color: var(--color-text-light);
+}
+
+nav.navBanner ul li a:hover {
+    color: var(--color-highlight);
+}
+
+#BannerIcon {
+    vertical-align: middle;
+}
+
+.dropDownButton {
+    background: transparent;
+    border: transparent;
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 80%;
+    margin-right: -80%;
+
+    padding-top: 10%;
+    margin-top: -10%;
+    padding-bottom: 10%;
+    margin-bottom: -10%;
+    color: var(--color-text-light);
+
+    align-items: center;
+    align-content: center;
+    background-color: var(--color-primary);
+    height: 5rem;
+    width: 100%;
+    border-radius: var(--spacing-sm);
+    font-size: 20px;
+    font-family: var(--font-primary);
+}
+
+.dropDownMenu {
+    display: none;
+    background-color: var(--color-primary);
+    position: fixed;
+    z-index: 2;
+    
+    width: 30%;
+    height: 15rem;
+
+    margin-top: 6rem;
+    margin-right: 0%;
+    margin-left: 67%;
+
+    border-bottom-left-radius: var(--spacing-sm);
+    border-bottom-right-radius: var(--spacing-sm);
+
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.3);
+}
+
+.dropDownButton:hover {    
+    color: var(--color-highlight);
+}
+
+.displayMenu {
+    display: block;
+}
+
+/* Drop Down Menu Decoration */
+.dropDownMenu ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    gap: 2.5%;
+}
+
+.dropDownMenu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    color: var(--color-text-light);
+
+    margin-right: -70%;
+    padding-right: 70%;
+}
+
+.dropDownMenu ul li a:hover {
+    color: var(--color-highlight);
+    margin-left: 5px;
+}
+
+
+.dropDownMenu ul li a:hover::after {
+    content: " < ";
+}
+
+/* General Decoration */
+main {
+    width: 60%;
+    background-color: var(--color-text-light);
+    margin: 12%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 6%;
+    padding-top: 5%;
+}
+
+footer {
+    padding-left: var(--spacing-xl);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-secondary);
+    font-family: var(--font-primary);
+    line-height: 2.2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-accent);
+    font-family: var(--font-primary);
+}
+
+.body-text {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.small-text {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: .85rem;
+    color: var(--color-text-small);
+}
+
+.partial {
+    width: 75%;
+}
+
+
+.splashImage {
+    width: 80%;
+    margin-left: 10%;
+    
+}
+
+/*  */
+
+@media (max-width: 850px) {
+  nav.navBanner {
+    position: relative;
+    size: 100%;
+    box-shadow: none;
+  }
+
+  nav.navBanner ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    gap: var(--spacing-sm);
+  }
+
+  #main-image {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  #BannerIcon {
+    display: none;
+  }
+
+  nav.navBanner ul li {
+    height: 3.5rem;
+  }
+
+  .dropDownButton {
+    height: 100%;
+    padding-top: 6%;
+  }
+
+  .dropDownMenu {
+    position: relative;
+    border-radius: 0;
+    box-shadow: none;
+    height: 15rem;
+    width: 100%;
+    margin: 0%;
+    padding-top: 1%;
+  }
+
+  .dropDownMenu ul li a {
+    font-size: 1rem;
+  }
+
+  .dropDownMenu Ul {
+    gap: 7%;
+  }
+
+
+  body {
+    background-color: var(--color-text-light);
+  }
+
+  main {
+    
+    width: 80%;
+    margin: 6%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 3%;
+    padding-top: .75%;
+  }
+
+  .partial {
+    width: 100%;
+  }
+
+  .hideMobile {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+}

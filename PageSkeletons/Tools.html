@@ -5,80 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../CSS/GeneralStyles.css">
+    <link rel="stylesheet" href="../CSS/GeneralStylesNew.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navBanner">
             <ul>
-                <li><a href="People.html">People</a></li>
-                <li><a href="Stations.html">Stations</a></li>
-                <li><a href="Calender.html">Calender</a></li>
+                <li><a href=index.html><img src="../Assets/btu logo.png" alt="4 Section Diamond with B, T, U, and Lab in each section. Colors based on a fire diamond." width="50px" id="BannerIcon"> BTU Lab</a></li>
+                <li><a href="ourPeople.html">People</a></li>
+                <li><a href="calendar.html">Calender</a></li>
                 <li><a href="rulesAndPolicies.html">Rules and Policies</a></li>
                 <li><a href="workshops.html">Workshops</a></li>
-                <li><a href="helpUs.html">Help us Blow Things Up</a></li>
+                <li><button onclick="toggleMenu()" class="dropDownButton">Stations</button></li>
             </ul>
         </nav>
 
+        <nav id="dropDownContent" class="dropDownMenu">
+            <ul>
+                <li><a href="3dPrinters.html">3D Printers</a></li>
+                <li><a href="cnc.html">CNC Machine</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="lasers.html">Lasers</a></li>
+                <li><a href="sewingAndTextiles.html">Sewing & Textiles</a></li>
+                <li><a href="Tools.html">Tools</a></li>
+                <li><a href="Woodshop.html">Woodshop</a></li>
+            </ul>
+        </nav>
+        
+        <script>
+            function toggleMenu() {
+                document.getElementById("dropDownContent").classList.toggle("displayMenu");
+            }
+        </script>
+    </header>
+    <main>
         <h1>
             Tools
         </h1>
-    </header>
 
-    <p class="splash">
-        General Tools equipment and materials are labeled <b>GREEN</b>.
-    </p>
+        <p class="splashG">
+            General Tools equipment and materials are labeled <b>GREEN</b>.
+        </p>
 
-    <img src="../Assets/tools1.jpg" alt="close up image of tool cabinet in BTU lab. The tools featured in the photo include: hand router, drills, screw drivers, and cutting blades."
+        <img class="splashImage" src="../Assets/tools1.jpg" alt="close up image of tool cabinet in BTU lab. The tools featured in the photo include: hand router, drills, screw drivers, and cutting blades.">
 
-    <p>
-        Power tools, mostly used in the Wood Shop, are more like... <b>GREEEEN</b>!
-    </p>
-    <p>
-        BTU Lab keeps lots of general tools on hand for all your inventing needs.
-    </p>
-    <p>
-        We can accommodate dozens of people at once and are working on increasing
-        project storage space. Yay!
-    </p>
-    <p>
-        Materials: <b>BTU LAB IS NOT A FREE SUPPLY STORE</b>.
-        But there are many ways to barter, including displaying
-        your work in BTU, tagging us in social media, offering workshops,
-        volunteering to organize supplies, and more. If you need something,
-        we ask that you give something in return.
-    </p>
-    <h2>
-        General Equipment
-    </h2>
-    <ul>
-        <li>Knives (yes!)</li>
-        <li>Cutting Mats</li>
-        <li>Scissors (not for fabric)</li>
-        <li>Measuring Tools</li>
-        <li>Various Glues*</li>
-        <li>Various Screwdrivers</li>
-        <li>Zip Ties*</li>
-        <li>Plywoods* (laser safe)</li>
-        <li>Hot Glue Guns*</li>
-        <li>Various Tapes*</li>
-        <li>Dremel Tools</li>
-        <li>Drills / Drivers</li>
-        <li>Various Papers</li>
-        <li>2D Craft Supplies</li>
-        <li>3D Craft Supplies</li>
-        <li>Plastics* (laser safe)</li>
-        <li>Various Fasteners</li>
-        <li>Sandpaper*</li>
-        <li>Sanding Tools</li>
-        <li>Saws</li>
-        <li>Files</li>
-        <li>Chisels</li>
-        <li>Various Fabrics</li>
-        <li>... and MORE!</li>
-    </ul>
+        <p class="body-text">
+            Power tools, mostly used in the Wood Shop, are more like... <b>GREEEEN</b>!
+        </p>
+        <p class="body-text">
+            BTU Lab keeps lots of general tools on hand for all your inventing needs.
+        </p>
+        <p class="body-text">
+            We can accommodate dozens of people at once and are working on increasing
+            project storage space. Yay!
+        </p>
+        <h2>
+            General Equipment
+        </h2>
+        <ul class="body-text">
+            <li>Knives (yes!)</li>
+            <li>Cutting Mats</li>
+            <li>Scissors (not for fabric)</li>
+            <li>Measuring Tools</li>
+            <li>Various Glues*</li>
+            <li>Various Screwdrivers</li>
+            <li>Zip Ties*</li>
+            <li>Plywoods* (laser safe)</li>
+            <li>Hot Glue Guns*</li>
+            <li>Various Tapes*</li>
+            <li>Dremel Tools</li>
+            <li>Drills / Drivers</li>
+            <li>Various Papers</li>
+            <li>2D Craft Supplies</li>
+            <li>3D Craft Supplies</li>
+            <li>Plastics* (laser safe)</li>
+            <li>Various Fasteners</li>
+            <li>Sandpaper*</li>
+            <li>Sanding Tools</li>
+            <li>Saws</li>
+            <li>Files</li>
+            <li>Chisels</li>
+            <li>Various Fabrics</li>
+            <li>and MORE!</li>
+        </ul>
+    </main>
+
     <footer>
-        Materials: <b>BTU LAB IS NOT A FREE SUPPLY STORE</b>. But there are many ways to barter, including displaying your work in BTU, tagging us in social media, offering workshops, volunteering to organize supplies, and more. If you need something, we ask that you give something in return.
+        <p class="small-text">Materials: <b>BTU LAB IS NOT A FREE SUPPLY STORE</b>. But there are many ways to barter, including displaying your work in BTU, tagging us in social media, offering workshops, volunteering to organize supplies, and more. If you need something, we ask that you give something in return. </p>
+        <p class="small-text">* Note this is not the official BTU website.</p>
     </footer>
+    
 </body>
 </html>

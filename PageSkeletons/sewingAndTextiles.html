@@ -5,26 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../CSS/GeneralStyles.css">
+    <link rel="stylesheet" href="../CSS/GeneralStylesNew.css">
 </head>
 <body>
-    <h1>
-        Sewing & Textiles
-    </h1>
+    <header>
+        <nav class="navBanner">
+            <ul>
+                <li><a href=index.html><img src="../Assets/btu logo.png" alt="4 Section Diamond with B, T, U, and Lab in each section. Colors based on a fire diamond." width="50px" id="BannerIcon"> BTU Lab</a></li>
+                <li><a href="ourPeople.html">People</a></li>
+                <li><a href="calendar.html">Calender</a></li>
+                <li><a href="rulesAndPolicies.html">Rules and Policies</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><button onclick="toggleMenu()" class="dropDownButton">Stations</button></li>
+            </ul>
+        </nav>
 
-    <p class="splash">
-        SEWING AND TEXTILES equipment and materials are labeled <b>YELLOW</b>.
-    </p>
-    <img src="../Assets/sewing1.jpg" alt="photo of sewing station in BTU lab, which encludes a tool cabinet as well as metal shevles.">
-    <p>
-        Sew whaaat?!		
-        <br>Sewing and textiles equipment training happens as requested by staff and/or community members. It is also the subject of some workshops. See workshops on the BTU Lab Calendar.
-        <br>See the BTU Mischief Maker page to contact one of our community experts for sewing tutorials.
-    </p>
-    <h2>
-        SEWING & TEXTILES EQUIPMENT
-    </h2>
-        <ul>
+        <nav id="dropDownContent" class="dropDownMenu">
+            <ul>
+                <li><a href="3dPrinters.html">3D Printers</a></li>
+                <li><a href="cnc.html">CNC Machine</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="lasers.html">Lasers</a></li>
+                <li><a href="sewingAndTextiles.html">Sewing & Textiles</a></li>
+                <li><a href="Tools.html">Tools</a></li>
+                <li><a href="Woodshop.html">Woodshop</a></li>
+            </ul>
+        </nav>
+        
+        <script>
+            function toggleMenu() {
+                document.getElementById("dropDownContent").classList.toggle("displayMenu");
+            }
+        </script>
+    </header>
+    <main>
+        <h1>
+            Sewing & Textiles
+        </h1>
+
+        <p class="splashY">
+            SEWING AND TEXTILES equipment and materials are labeled <b>YELLOW</b>.
+        </p>
+
+        <img class="splashImage" src="../Assets/sewing1.jpg" alt="photo of sewing station in BTU lab, which encludes a tool cabinet as well as metal shevles.">
+        
+        <p class="body-text">
+            Sew whaaat?!		
+            <br>Sewing and textiles equipment training happens as requested by staff and/or community members. It is also the subject of some workshops. See workshops on the BTU Lab Calendar.
+            <br>See the BTU Mischief Maker page to contact one of our community experts for sewing tutorials.
+        </p>
+        <h2>
+            SEWING & TEXTILES EQUIPMENT
+        </h2>
+        
+        <ul class="body-text">
             <li>Multi-stitch Sewing Machines</li>
             <li>4-Thread Serger</li>
             <li>Industrial Sewing Machine</li>
@@ -35,8 +69,11 @@
             <li>Random Fabrics</li>
             <li>Oh yeah...and more.</li>
         </ul>
+    </main>   
+
     <footer>
-        Materials: <b>BTU LAB IS NOT A FREE SUPPLY STORE</b>. But there are many ways to barter, including displaying your work in BTU, tagging us in social media, offering workshops, volunteering to organize supplies, and more. If you need something, we ask that you give something in return.
+        <p class="small-text">Materials: <b>BTU LAB IS NOT A FREE SUPPLY STORE</b>. But there are many ways to barter, including displaying your work in BTU, tagging us in social media, offering workshops, volunteering to organize supplies, and more. If you need something, we ask that you give something in return. </p>
+        <p class="small-text">* Note this is not the official BTU website.</p>
     </footer>
 </body>
 </html>
