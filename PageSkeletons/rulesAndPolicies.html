@@ -5,26 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../CSS/GeneralStyles.css">
+    <link rel="stylesheet" href="../CSS/GeneralStylesNew.css">
 </head>
 
 <body>
     <header>
         <nav class="navBanner">
             <ul>
-                <li><a href=Home.html><img src="../Assets/btu logo.png" alt="4 Section Diamond with B, T, U, and Lab in each section. Colors based on a fire diamond." width="50px" id="BannerIcon"> BTU Lab</a></li>
+                <li><a href=index.html><img src="../Assets/btu logo.png" alt="4 Section Diamond with B, T, U, and Lab in each section. Colors based on a fire diamond." width="50px" id="BannerIcon"> BTU Lab</a></li>
                 <li><a href="ourPeople.html">People</a></li>
-                <li><a href="Calender.html">Calender</a></li>
+                <li><a href="calendar.html">Calender</a></li>
                 <li><a href="rulesAndPolicies.html">Rules and Policies</a></li>
                 <li><a href="workshops.html">Workshops</a></li>
-                <li><a href="helpUs.html">Join Us</a></li>
+                <li><button onclick="toggleMenu()" class="dropDownButton">Stations</button></li>
             </ul>
-        </nav>    
+        </nav>
+
+        <nav id="dropDownContent" class="dropDownMenu">
+            <ul>
+                <li><a href="3dPrinters.html">3D Printers</a></li>
+                <li><a href="cnc.html">CNC Machine</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="lasers.html">Lasers</a></li>
+                <li><a href="sewingAndTextiles.html">Sewing & Textiles</a></li>
+                <li><a href="Tools.html">Tools</a></li>
+                <li><a href="Woodshop.html">Woodshop</a></li>
+            </ul>
+        </nav>
+        
+        <script>
+            function toggleMenu() {
+                document.getElementById("dropDownContent").classList.toggle("displayMenu");
+            }
+        </script> 
     </header>
 
     <main>
         <h1>
-            BTU Rules & Polices
+            BTU Rules and Policies
         </h1>
 
         <section>
@@ -41,10 +59,10 @@
             Rules:
         </h2>
         <section>
-            <img src="../Assets/rules1.gif" alt="image of the dude being cool and lounging on a couch"
-            <ol class="body-text">
-                <li>BE COOL</li>
+            <ol>
+                <li class="body-text">BE COOL</li>
             </ol>
+            <img class="splashImage" src="../Assets/rules1.gif" alt="image of the dude being cool and lounging on a couch">
             <h3>
                 Ways to be cool:
             </h3>

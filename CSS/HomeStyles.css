@@ -13,7 +13,7 @@
 
     --color-text-light: white;
     --color-background: rgb(220, 220, 220);
-    --color-text-small: rgb(94, 94, 94);
+    --color-text-small: rgb(137, 137, 137);
 
     --font-primary: 'Archivo Black', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-secondary: 'helvetica-lt-pro', -apple-system, sans-serif;
@@ -49,6 +49,7 @@ nav.navBanner {
     padding-top: var(--spacing-sm);
     padding-bottom: var(--spacing-sm);
     position: fixed;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.3);
     
 }
 
@@ -56,7 +57,6 @@ nav.navBanner ul {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     list-style-type: none;
-    font-family: var(--font-primary);
     padding: 0;
     margin: 0;
     gap: var(--spacing-sm);
@@ -64,6 +64,7 @@ nav.navBanner ul {
 
 
 nav.navBanner ul li {
+    font-family: var(--font-primary);
     align-items: center;
     align-content: center;
     background-color: var(--color-primary);
@@ -96,13 +97,96 @@ nav.navBanner ul li a:hover {
     vertical-align: middle;
 }
 
+.dropDownButton {
+    background: transparent;
+    border: transparent;
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 80%;
+    margin-right: -80%;
+
+    padding-top: 10%;
+    margin-top: -10%;
+    padding-bottom: 10%;
+    margin-bottom: -10%;
+    color: var(--color-text-light);
+
+    align-items: center;
+    align-content: center;
+    background-color: var(--color-primary);
+    height: 5rem;
+    width: 100%;
+    border-radius: var(--spacing-sm);
+    font-size: 20px;
+    font-family: var(--font-primary);
+}
+
+.dropDownMenu {
+    display: none;
+    background-color: var(--color-primary);
+    position: fixed;
+    z-index: 2;
+    
+    width: 30%;
+    height: 15rem;
+
+    margin-top: 6rem;
+    margin-right: 0%;
+    margin-left: 67%;
+
+    border-bottom-left-radius: var(--spacing-sm);
+    border-bottom-right-radius: var(--spacing-sm);
+
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.3);
+}
+
+.dropDownButton:hover {    
+    color: var(--color-highlight);
+}
+
+.displayMenu {
+    display: block;
+}
+
+/* Drop Down Menu Decoration */
+.dropDownMenu ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    gap: 2.5%;
+}
+
+.dropDownMenu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    color: var(--color-text-light);
+
+    margin-right: -70%;
+    padding-right: 70%;
+}
+
+.dropDownMenu ul li a:hover {
+    color: var(--color-highlight);
+    margin-left: 5px;
+}
+
+
+.dropDownMenu ul li a:hover::after {
+    content: " < ";
+}
+
+/* General Decoration */
 main {
-    width: 80%;
+    width: 60%;
     background-color: var(--color-text-light);
-    margin: 6%;
+    margin: 12%;
     margin-top: 0%;
     margin-bottom: 0%;
-    padding: 3%;
+    padding: 6%;
     padding-top: 5%;
 }
 
@@ -137,17 +221,20 @@ h3 {
 .body-text {
     font-family: var(--font-secondary);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-bottom: var(--spacing-md);
 }
 
 .small-text {
     font-family: var(--font-secondary);
     font-weight: 700;
-    font-size: .75rem;
+    font-size: .85rem;
     color: var(--color-text-small);
 }
 
+.partial {
+    width: 75%;
+}
 
 
 #main-image {
@@ -155,10 +242,12 @@ h3 {
     margin-left: 10%;
 }
 
+
 @media (max-width: 850px) {
   nav.navBanner {
     position: relative;
     size: 100%;
+    box-shadow: none;
   }
 
   nav.navBanner ul {
@@ -181,11 +270,46 @@ h3 {
     height: 3.5rem;
   }
 
+  .dropDownButton {
+    height: 100%;
+    padding-top: 6%;
+  }
+
+  .dropDownMenu {
+    position: relative;
+    border-radius: 0;
+    box-shadow: none;
+    height: 15rem;
+    width: 100%;
+    margin: 0%;
+    padding-top: 1%;
+  }
+
+  .dropDownMenu ul li a {
+    font-size: 1rem;
+  }
+
+  .dropDownMenu Ul {
+    gap: 7%;
+  }
+
+
   body {
     background-color: var(--color-text-light);
   }
 
   main {
+    
+    width: 80%;
+    margin: 6%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 3%;
     padding-top: .75%;
   }
+
+  .partial {
+    width: 100%;
+}
+
 }
