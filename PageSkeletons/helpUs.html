@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../CSS/GeneralStyles.css">
+    <link rel="stylesheet" href="../CSS/GeneralStylesNew.css">
 </head>
 
 <body>
@@ -13,28 +13,50 @@
 
         <nav class="navBanner">
             <ul>
-                <li><a href=Home.html><img src="../Assets/btu logo.png" alt="4 Section Diamond with B, T, U, and Lab in each section. Colors based on a fire diamond." width="50px" id="BannerIcon"> BTU Lab</a></li>
+                <li><a href=index.html><img src="../Assets/btu logo.png" alt="4 Section Diamond with B, T, U, and Lab in each section. Colors based on a fire diamond." width="50px" id="BannerIcon"> BTU Lab</a></li>
                 <li><a href="ourPeople.html">People</a></li>
-                <li><a href="Calender.html">Calender</a></li>
+                <li><a href="calendar.html">Calender</a></li>
                 <li><a href="rulesAndPolicies.html">Rules and Policies</a></li>
                 <li><a href="workshops.html">Workshops</a></li>
-                <li><a href="helpUs.html">Join Us</a></li>
+                <li><button onclick="toggleMenu()" class="dropDownButton">Stations</button></li>
             </ul>
-        </nav> 
+        </nav>
 
-    <img src="../Assets/people/zackWeaver.jpg" alt="photo of zackWeaver in the btu lab">
+        <nav id="dropDownContent" class="dropDownMenu">
+            <ul>
+                <li><a href="3dPrinters.html">3D Printers</a></li>
+                <li><a href="cnc.html">CNC Machine</a></li>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="lasers.html">Lasers</a></li>
+                <li><a href="sewingAndTextiles.html">Sewing & Textiles</a></li>
+                <li><a href="Tools.html">Tools</a></li>
+                <li><a href="Woodshop.html">Woodshop</a></li>
+            </ul>
+        </nav>
+        
+        <script>
+            function toggleMenu() {
+                document.getElementById("dropDownContent").classList.toggle("displayMenu");
+            }
+        </script>
+
+    
         
     </header>
     <main>
+
         <h1>
             Help Us Blow Things Up!
         </h1>
         <h2>
             We can't do it without you!
         </h2>
+
+        <img class="splashImage" src="../Assets/people/zackWeaver.jpg" alt="photo of zackWeaver in the btu lab">
+
         <p class="body-text">
             If you're interested in learning ways to support BTU Lab, contact 
-            lab Director Zack Weaver at zaja9653@colorado.edu. 
+            lab Director Zack Weaver at <a href="mailto:zaja9653@colorado.edu">zaja9653@colorado.edu</a>. 
         </p>
         <p class="body-text">
             If you've visited and know a good thing when you see it, you can go directly 
